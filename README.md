@@ -23,7 +23,7 @@ This repository serves as a portfolio of my work in the first semester, covering
   - **Image Processing**: OpenCV, Pillow
   - **Data Analysis**: Pandas, NumPy
   - **Visualization**: Matplotlib, Seaborn
-- **Tools**: Jupyter Notebook, Git, GitHub
+- **Tools**: Jupyter Notebook, Git, GitHub 
 
 ## Projects
 A summary of the key projects included:
@@ -33,19 +33,11 @@ A summary of the key projects included:
    - **Description**: Implemented filters for image enhancement, including edge detection and transformation techniques.
 
 2. ### Data Exploration and Visualization
-   - **Project**: *Exploratory Analysis of [Dataset Name]*
+   - **Project**: *Exploratory Analysis *
    - **Description**: Conducted data analysis on [Dataset Name] to identify trends and patterns, visualized using various tools.
 
 3. ### Python Programming
-   - **Project**: *Python Functions & Data Structures*
+   - **Project**: *Python Functions*
    - **Description**: Completed exercises and mini-projects focused on strengthening Python skills for AI applications.
 
-## Installation
-To set up the repository locally, follow these steps:
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/yourusername/AI-Master-Projects.git
-   cd AI-Master-Projects
    
