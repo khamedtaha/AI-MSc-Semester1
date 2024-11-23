@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banknote Authentication</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input {
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px;
+            font-size: 16px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <img src="/static/images/773d1f07-ddef-41af-8e8d-cf895814da5a.png" alt="Banknote Authentication" class="header-img"     width="100%" 
+      height="200">
+
+        <h1>Banknote Authentication</h1>
+        <form action="/predict/" method="post">
+            <input type="number" step="any" name="diagonal_size" placeholder="Diagonal Size" required>
+            <input type="number" step="any" name="height_left" placeholder="Height (Left)" required>
+            <input type="number" step="any" name="height_right" placeholder="Height (Right)" required>
+            <input type="number" step="any" name="lower_margin" placeholder="Lower Margin" required>
+            <input type="number" step="any" name="upper_margin" placeholder="Upper Margin" required>
+            <input type="number" step="any" name="length" placeholder="Length" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

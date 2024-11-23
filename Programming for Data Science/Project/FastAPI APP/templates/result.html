@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+         max-width: 600px;
+         margin: auto;
+         background: white;
+         padding: 20px;
+         border-radius: 8px;
+         box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+     }
+        h1 {
+            color: #007BFF;
+            text-align: center;
+        }
+        h2 {
+            color: #555;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        a:hover {
+            background-color: #0056b3 ;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+   <h1>Prediction Result</h1>
+   <h2><strong>Authenticity :</strong> 
+      <span style="color: {% if authenticity == 'Counterfeit' %} red {% else %} green {% endif %};">
+          {{ authenticity }}
+      </span>
+   </h2>
+    <h3>Input Data</h3>
+    <ul>
+        <li><strong>Diagonal Size :</strong> {{ input_data.diagonal }}</li>
+        <li><strong>Height Left :</strong> {{ input_data.height_left }}</li>
+        <li><strong>Height Right :</strong> {{ input_data.height_right }}</li>
+        <li><strong>Lower Margin :</strong> {{ input_data.margin_low }}</li>
+        <li><strong>Upper Margin :</strong> {{ input_data.margin_up }}</li>
+        <li><strong>Length :</strong> {{ input_data.length }}</li>
+    </ul>
+    <a href="/">Check Another Banknote</a>
+   </div>
+</body>
+</html>
