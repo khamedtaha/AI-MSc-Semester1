@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wikipedia Search App</title>
+    <style>
+      /* General Body Styling */
+      body {
+        font-family: "Roboto", Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to right, #6a11cb, #2575fc);
+        color: #333;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+      /* App Container */
+      #app-container {
+        max-width: 800px;
+        width: 100%;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+      }
+      /* Header Styling */
+      h1 {
+        font-size: 2rem;
+        color: #4caf50;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      /* Search Box Styling */
+      #search-container {
+        display: flex;
+        margin-bottom: 20px;
+      }
+      #search-input {
+        flex-grow: 1;
+        padding: 15px;
+        font-size: 16px;
+        border: 1px solid #ddd;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+      }
+      #search-button {
+        padding: 15px 20px;
+        background: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background 0.3s;
+      }
+      #search-button:hover {
+        background: #45a049;
+      }
+      /* Results Section */
+      #results {
+        background: #f9f9f9;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        max-height: 300px;
+        overflow-y: auto;
+        padding: 10px;
+      }
+      .result-item {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+        transition: background-color 0.3s, transform 0.2s;
+        cursor: pointer;
+      }
+      .result-item:hover {
+        background-color: #f1f1f1;
+        transform: scale(1.02);
+      }
+      /* Details Section */
+      #details {
+        margin-top: 20px;
+        background: #f9f9f9;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      #details h2 {
+        font-size: 1.5rem;
+        color: #333;
+      }
+      #details p {
+        line-height: 1.6;
+      }
+      #details a {
+        color: #4caf50;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      #details a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app-container">
+      <h1>Wikipedia Search App</h1>
+      <div id="search-container">
+        <input type="text" id="search-input" placeholder="Search people..." />
+        <button id="search-button">Search</button>
+      </div>
+      <div id="results"></div>
+      <div id="details"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+    <script>
+      // Fetch and parse CSV data
+      let peopleData = [];
+      fetch("output.csv")
+        .then((response) => response.text())
+        .then((csvData) => {
+          const parsedData = Papa.parse(csvData, { header: true });
+          peopleData = parsedData.data;
+
+          // Log data for debugging
+          console.log("Fetched Data:", peopleData);
+
+          // Example logic - extracting toy names from CSV for testing purposes
+          const toyNames = peopleData.map((item) => item["name"] || "Unknown");
+          console.log("Extracted Toy Names:", toyNames);
+        });
+
+      // DOM Elements
+      const searchInput = document.getElementById("search-input");
+      const searchButton = document.getElementById("search-button");
+      const resultsContainer = document.getElementById("results");
+      const detailsContainer = document.getElementById("details");
+
+      // Search functionality
+      function searchPeople(query) {
+        const filteredPeople = peopleData.filter(
+          (person) =>
+            person.name &&
+            person.name.toLowerCase().includes(query.toLowerCase())
+        );
+
+        resultsContainer.innerHTML = "";
+
+        filteredPeople.forEach((person) => {
+          const resultItem = document.createElement("div");
+          resultItem.classList.add("result-item");
+          resultItem.innerHTML = `
+                    <strong>${person.name}</strong>
+                    <p>${person.summary || "No summary available"}</p>
+                    <p><em>Word Count: ${person.word_count || "N/A"}</em></p>
+                `;
+          resultItem.addEventListener("click", () =>
+            displayPersonDetails(person)
+          );
+          resultsContainer.appendChild(resultItem);
+        });
+      }
+
+      // Display person details
+      function displayPersonDetails(person) {
+        detailsContainer.innerHTML = `
+                <h2>${person.name}</h2>
+                <p><strong>Summary:</strong> ${
+                  person.summary || "No information available"
+                }</p>
+                <p><a href="${
+                  person.url || "https://en.wikipedia.org"
+                }" target="_blank">Read More on Wikipedia</a></p>
+                <p><strong>Complexity Score:</strong> ${
+                  person.complexity_score || "N/A"
+                }</p>
+                <p><strong>Topic Keywords:</strong> ${
+                  person.topic_keywords || "No keywords available"
+                }</p>
+            `;
+      }
+
+      // Event Listeners
+      searchButton.addEventListener("click", () => {
+        searchPeople(searchInput.value);
+      });
+
+      searchInput.addEventListener("keyup", (event) => {
+        if (event.key === "Enter") {
+          searchPeople(searchInput.value);
+        }
+      });
+    </script>
+  </body>
+</html>
