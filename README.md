@@ -28,15 +28,15 @@ A summary of the key projects included :
 1. ### Digital Image Processing
    - **Project** : *Image Filters & Edge Detection*
    - **Description** : Implemented filters for image enhancement, including edge detection and transformation techniques.
-
+   ---
 2. ### Data Exploration and Visualization
    - **Project** : *Analysis on Wikipedia (Toys and Games)*
    - **Description** : The aim of this project is to explore and analyze an in-depth dataset (texts and images) to identify patterns, relationships and trends. The goal is to conduct data  cleaning and visualization and statistical analysis to obtain insights that will help in decision-making and build a search engine .
-
+   ---
 3. ### Python Programming
    - **Project** : *Stock and Sales Analysis*
    - **Description** : Developed a project to analyze stock and sales data, focusing on extracting insights, identifying trends, and automating reporting processes using Python.
-   --
+   
    - **Project** : *Stock and Sales Analysis*
 
    
