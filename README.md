@@ -7,36 +7,37 @@ Welcome to the repository for my first-semester projects in the AI Master’s pr
 - [Technologies](#technologies)
 - [Projects](#projects)
 - [Installation & Usage](#installation)
-- [Contact](#contact)
 
 ## Overview
-This repository serves as a portfolio of my work in the first semester, covering foundational topics and practical applications in AI. The main focuses are:
-- **Digital Image Processing**: Techniques for analyzing and transforming images.
-- **Data Exploration and Visualization**: Data analysis and visualization to uncover patterns and insights.
-- **Python Programming**: Implementing AI and data processing solutions in Python.
+This repository serves as a portfolio of my work in the first semester, covering foundational topics and practical applications in AI. The main focuses are :
+- **Digital Image Processing** : Techniques for analyzing and transforming images.
+- **Data Exploration and Visualization** : Data analysis and visualization to uncover patterns and insights.
+- **Python Programming** : Implementing AI and data processing solutions in Python.
 
 ## Technologies
-- **Programming Language**: Python
+- **Programming Language** : Python
 - **Libraries**:
-  - **Image Processing**: OpenCV, Pillow
-  - **Data Analysis**: Pandas, NumPy
+  - **Image Processing** : OpenCV, Pillow
+  - **Data Analysis**: Pandas, NumPy , scikit-learn
   - **Visualization**: Matplotlib, Seaborn
 - **Tools**: Jupyter Notebook, Git, GitHub 
 
 ## Projects
-A summary of the key projects included:
+A summary of the key projects included :
 
 1. ### Digital Image Processing
-   - **Project**: *Image Filters & Edge Detection*
-   - **Description**: Implemented filters for image enhancement, including edge detection and transformation techniques.
+   - **Project** : *Image Filters & Edge Detection*
+   - **Description** : Implemented filters for image enhancement, including edge detection and transformation techniques.
 
 2. ### Data Exploration and Visualization
-   - **Project**: *Exploratory Analysis *
-   - **Description**: Conducted data analysis on [Dataset Name] to identify trends and patterns, visualized using various tools.
+   - **Project** : *Analysis on Wikipedia (Toys and Games)*
+   - **Description** : The aim of this project is to explore and analyze an in-depth dataset (texts and images) to identify patterns, relationships and trends. The goal is to conduct data  cleaning and visualization and statistical analysis to obtain insights that will help in decision-making and build a search engine .
 
 3. ### Python Programming
-   - **Project**: *Python Functions*
-   - **Description**: Completed exercises and mini-projects focused on strengthening Python skills for AI applications.
+   - **Project** : *Stock and Sales Analysis*
+   - **Description** : Developed a project to analyze stock and sales data, focusing on extracting insights, identifying trends, and automating reporting processes using Python.
+   ----
+   - **Project** : *Stock and Sales Analysis*
 
    
 ## Installation & Usage
