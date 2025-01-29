@@ -37,7 +37,12 @@ A summary of the key projects included :
    - **Project** : *Stock and Sales Analysis*
    - **Description** : Developed a project to analyze stock and sales data, focusing on extracting insights, identifying trends, and automating reporting processes using Python.
    
-   - **Project** : *Stock and Sales Analysis*
+   - **Project** : *Automatic Detection Algorithm for Counterfeit Banknotes*
+   - **Description** : When a banknote arrives, we have a machine that records all its   geometric characteristics. 
+    Over our years of effort, we have observed differences in dimensions between genuine and counterfeit banknotes. 
+    These differences are difficult to detect with the naked eye, but a machine should have no problem distinguishing them.
+    Thus, an algorithm should be built that, based on the geometric characteristics of a banknote, 
+    would be capable of determining whether it is genuine or counterfeit.
 
    
 ## Installation & Usage
