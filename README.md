@@ -33,17 +33,14 @@ A summary of the key projects included :
    - **Project** : *Analysis on Wikipedia (Toys and Games)*
    - **Description** : The aim of this project is to explore and analyze an in-depth dataset (texts and images) to identify patterns, relationships and trends. The goal is to conduct data  cleaning and visualization and statistical analysis to obtain insights that will help in decision-making and build a search engine .
    ---
-3. ### Python Programming
-   - ***Project*** : *Stock and Sales Analysis*
-   - **Description** : Developed a project to analyze stock and sales data, focusing on extracting insights, identifying trends, and automating reporting processes using Python.
-   
-   
-   - **Project** : *Automatic Detection Algorithm for Counterfeit Banknotes*
-   - **Description** : When a banknote arrives, we have a machine that records all its   geometric characteristics. 
-    Over our years of effort, we have observed differences in dimensions between genuine and counterfeit banknotes. 
-    These differences are difficult to detect with the naked eye, but a machine should have no problem distinguishing them.
-    Thus, an algorithm should be built that, based on the geometric characteristics of a banknote, 
-    would be capable of determining whether it is genuine or counterfeit.
+3. ### Python Programming  
+
+   #### **Project 1**: *Stock and Sales Analysis*  
+   - **Description**: Developed a project to analyze stock and sales data, focusing on extracting insights, identifying trends, and automating reporting processes using Python.  
+
+   #### **Project 2**: *Automatic Detection Algorithm for Counterfeit Banknotes*  
+   - **Description**: Designed an algorithm to classify banknotes as genuine or counterfeit based on their geometric characteristics. Over years of research, observed differences in dimensions between genuine and counterfeit banknotes, which are difficult to detect with the naked eye but can be identified by a machine. The algorithm leverages these characteristics to make accurate classifications.
+
 
    
 ## Installation & Usage
