@@ -35,11 +35,17 @@ A summary of the key projects included :
    ---
 3. ### Python Programming  
 
-   #### **Project 1**: *Stock and Sales Analysis*  
-   - **Description**: Developed a project to analyze stock and sales data, focusing on extracting insights, identifying trends, and automating reporting processes using Python.  
+   #### **Project 1** : *Stock and Sales Analysis*  
+   - **Description** : Developed a project to analyze stock and sales data, focusing on extracting insights, identifying trends, and automating reporting processes using Python.  
 
-   #### **Project 2**: *Automatic Detection Algorithm for Counterfeit Banknotes*  
-   - **Description**: Designed an algorithm to classify banknotes as genuine or counterfeit based on their geometric characteristics. Over years of research, observed differences in dimensions between genuine and counterfeit banknotes, which are difficult to detect with the naked eye but can be identified by a machine. The algorithm leverages these characteristics to make accurate classifications.
+   #### **Project 2** : *Automatic Detection Algorithm for Counterfeit Banknotes*  
+   - **Description** : Designed an algorithm to classify banknotes as genuine or counterfeit based on their geometric characteristics. Over years of research, observed differences in dimensions between genuine and counterfeit banknotes, which are difficult to detect with the naked eye but can be identified by a machine. The algorithm leverages these characteristics to make accurate classifications.
+   ---
+4. ### Mathematics for Machine Learning 
+   
+   #### **Project** : *Basis and Orthogonal Projection Matrix*
+   - **Description** : Extract a basis from a set of spanning vectors , Compute the orthogonal projection matrix onto a subspace defined by the basis . 
+   
 
 
    
