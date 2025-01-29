@@ -34,8 +34,9 @@ A summary of the key projects included :
    - **Description** : The aim of this project is to explore and analyze an in-depth dataset (texts and images) to identify patterns, relationships and trends. The goal is to conduct data  cleaning and visualization and statistical analysis to obtain insights that will help in decision-making and build a search engine .
    ---
 3. ### Python Programming
-   - **Project** : *Stock and Sales Analysis*
+   - ***Project*** : *Stock and Sales Analysis*
    - **Description** : Developed a project to analyze stock and sales data, focusing on extracting insights, identifying trends, and automating reporting processes using Python.
+   
    
    - **Project** : *Automatic Detection Algorithm for Counterfeit Banknotes*
    - **Description** : When a banknote arrives, we have a machine that records all its   geometric characteristics. 
