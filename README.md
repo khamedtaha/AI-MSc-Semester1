@@ -36,7 +36,7 @@ A summary of the key projects included :
 3. ### Python Programming
    - **Project** : *Stock and Sales Analysis*
    - **Description** : Developed a project to analyze stock and sales data, focusing on extracting insights, identifying trends, and automating reporting processes using Python.
-   ----
+   --
    - **Project** : *Stock and Sales Analysis*
 
    
