@@ -39,7 +39,7 @@ A summary of the key projects included:
    - **Description**: Completed exercises and mini-projects focused on strengthening Python skills for AI applications.
 
    
-### Installation & Usage
+## Installation & Usage
 To set up the repository on your local machine:
 1. Clone the repository:  
    ```bash  
