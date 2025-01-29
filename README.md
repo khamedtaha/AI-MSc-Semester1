@@ -45,7 +45,12 @@ A summary of the key projects included :
    
    #### **Project** : *Basis and Orthogonal Projection Matrix*
    - **Description** : Extract a basis from a set of spanning vectors , Compute the orthogonal projection matrix onto a subspace defined by the basis . 
+   ---
+5. ### Statistics  
    
+   #### **Project** : *Exploring Correlation and Causation*
+   - **Description** : Understand the distinction between correlation and causation , Identify confounding variables in a dataset . 
+    , Use statistical tools to analyze and interpret the relationship between variable
 
 
    
