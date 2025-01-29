@@ -6,9 +6,7 @@ Welcome to the repository for my first-semester projects in the AI Master’s pr
 - [Overview](#overview)
 - [Technologies](#technologies)
 - [Projects](#projects)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Future Work](#future-work)
+- [Installation & Usage](#installation)
 - [Contact](#contact)
 
 ## Overview
@@ -41,3 +39,14 @@ A summary of the key projects included:
    - **Description**: Completed exercises and mini-projects focused on strengthening Python skills for AI applications.
 
    
+### Installation & Usage
+To set up the repository on your local machine:
+1. Clone the repository:  
+   ```bash  
+   git clone https://github.com/khamedtaha/AI-MSc-Semester1.git  
+   cd AI-MSc-Semester1
+2. Open CMD or Terminal  : 
+   ```bash  
+   jupyter notebook   
+3. Navigate to the respective project folders for detailed instructions
+ 
